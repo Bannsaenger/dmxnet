@@ -9,8 +9,9 @@
 [![npm](https://img.shields.io/npm/dt/dmxnet.svg)](https://www.npmjs.com/package/dmxnet)
 [![Travis (.com)](https://img.shields.io/travis/com/margau/dmxnet.svg)](https://travis-ci.com/margau/dmxnet)
 
-dmxnet is an ArtNet-DMX-sender and receiver for nodejs,
-currently under heavy development!
+dmxnet is an ArtNet-DMX-sender and receiver for nodejs
+
+# Warning: This Libary is not really actively maintained from me at the moment. It probably does work, but PRs might take a time, if merged at all. Feel free to fork if you wanna extend and develop it actively.
 
 ## Features
 
@@ -103,6 +104,10 @@ Options:
   esta: 0, // ESTA Manufacturer ID from https://tsp.esta.org, default to ESTA/PLASA (0x0000)
   sName: "Text", // 17 char long node description, default to "dmxnet"
   lName: "Long description", // 63 char long node description, default to "dmxnet - OpenSource ArtNet Transceiver"
+  hosts: ["127.0.0.1"], // Interfaces to listen to, all by default
+  errFunc: function(err) {
+                this.error(`Do some error handling or throw it: ${err.message}, stack: ${err.stack}`);
+            }.bind(this) // optional function to handle errors from the library by yourself. If omitted the errors will be thrown by the library
   hosts: ["127.0.0.1"], // Interfaces to listen to, all by default
   errFunc: function(err) {
                 this.error(`Do some error handling or throw it: ${err.message}, stack: ${err.stack}`);
