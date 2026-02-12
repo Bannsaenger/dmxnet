@@ -25,7 +25,7 @@ dmxnet is an ArtNet-DMX-sender and receiver for nodejs
 See https://github.com/margau/dmxnet/graphs/contributors
 
 ## Changelog
-**Work in Progress**
+**v0.9.1**
 Dependency Updates, redesigned error handling (@bannsaenger)
 
 **v0.9.0**
