@@ -1,5 +1,5 @@
 {
-  "name": "dmxnet",
+  "name": "@bannsaenger/dmxnet",
   "version": "0.9.1",
   "description": "ArtNet-DMX-sender and receiver for nodejs",
   "main": "lib.js",
